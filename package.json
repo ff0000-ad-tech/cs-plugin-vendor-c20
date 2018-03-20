@@ -1,0 +1,67 @@
+{
+  "_from": "git+ssh://git@github.com/ff0000-ad-tech/cs-plugin-vendor-c20.git",
+  "_id": "@ff0000-ad-tech/cs-plugin-vendor-c20@1.0.0",
+  "_inBundle": false,
+  "_location": "/@ff0000-ad-tech/cs-plugin-vendor-c20",
+  "_phantomChildren": {
+    "escape-string-regexp": "1.0.5",
+    "ms": "2.0.0"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "@ff0000-ad-tech/cs-plugin-vendor-c20@git+ssh://git@github.com/ff0000-ad-tech/cs-plugin-vendor-c20.git",
+    "name": "@ff0000-ad-tech/cs-plugin-vendor-c20",
+    "escapedName": "@ff0000-ad-tech%2fcs-plugin-vendor-c20",
+    "scope": "@ff0000-ad-tech",
+    "rawSpec": "git+ssh://git@github.com/ff0000-ad-tech/cs-plugin-vendor-c20.git",
+    "saveSpec": "git+ssh://git@github.com/ff0000-ad-tech/cs-plugin-vendor-c20.git",
+    "fetchSpec": "ssh://git@github.com/ff0000-ad-tech/cs-plugin-vendor-c20.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+ssh://git@github.com/ff0000-ad-tech/cs-plugin-vendor-c20.git#90a8976ebb7539dbf891df717123e25594597a79",
+  "_spec": "@ff0000-ad-tech/cs-plugin-vendor-c20@git+ssh://git@github.com/ff0000-ad-tech/cs-plugin-vendor-c20.git",
+  "_where": "/Users/kenny.arehart/Documents/_CLIENTS/ESPN/ESPN_MLB_2018/ES6/regular_season_clone_vendor",
+  "author": {
+    "name": "RED Interactive Agency"
+  },
+  "bugs": {
+    "url": "https://github.com/ff0000-ad-tech/cs-plugin-vendor-c20/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "debug": "git://github.com/gmcdev/debug.git",
+    "fs-extra": "^5.0.0",
+    "minimist": "^1.2.0"
+  },
+  "deprecated": false,
+  "description": "Creative Server Plugin - Vendor Container 2.0 ===============",
+  "devDependencies": {},
+  "homepage": "https://github.com/ff0000-ad-tech/cs-plugin-vendor-c20#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@ff0000-ad-tech/cs-plugin-vendor-c20",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ff0000-ad-tech/cs-plugin-vendor-c20.git"
+  },
+  "scripts": {
+    "pub": "np"
+  },
+  "version": "1.0.0",
+  "wp-creative-server": {
+    "routes": {
+      "api": "./index.js"
+    },
+    "hooks": {
+      "bulk-control": {
+        "Vendor C2.0": "/api/?cmd=index+backups"
+      }
+    }
+  }
+}
