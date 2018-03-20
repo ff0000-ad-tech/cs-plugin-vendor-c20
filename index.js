@@ -2,12 +2,12 @@ const argv = require('minimist')(process.argv.slice(2))
 const packager = require('./lib/packager.js')
 
 const debug = require('debug')
-var log = debug('cs-plugin-vendor-indexes')
+var log = debug('cs-plugin-vendor-c20')
 
 global.api = `http://${argv.api}`
 
 switch (argv.cmd) {
-	case 'index+backups':
+	case 'vendor-c20':
 		log(argv.profile)
 		const targets = JSON.parse(argv.targets)
 		log(targets)
@@ -17,6 +17,14 @@ switch (argv.cmd) {
 
 /*
 
-node index.js --cmd packager --api '10.0.7.126:5200' --profile 'off_channel' --targets '{"off_channel/300x250__generic/index.html":"/3-traffic/off_channel/300x250__generic/","off_channel/320x50__players/index.html":"/3-traffic/off_channel/320x50__players/","off_channel/728x90__team_away/index.html":"/3-traffic/off_channel/728x90__team_away/"}'
+node "/Users/kenny.arehart/Documents/_CLIENTS/ESPN/ESPN_MLB_2018/ES6/regular_season_clone_vendor/node_modules/@ff0000-ad-tech/cs-plugin-vendor-c20/index.js" 
+--cmd vendor-c20 
+--api '10.0.86.13:5200' 
+--profile 'preview' 
+--targets '{
+	"preview/300x250/index.html":"/3-traffic/preview/300x250/",
+	"preview/320x50/index.html":"/3-traffic/preview/320x50/",
+	"preview/728x90/index.html":"/3-traffic/preview/728x90/"
+}'
 
 */
