@@ -62,7 +62,7 @@
     },
     "hooks": {
       "bulk-control": {
-        "Vendor C2.0": "/api/?cmd=index+backups"
+        "Vendor C2.0": "/api/?cmd=vendor-c20"
       }
     }
   }
