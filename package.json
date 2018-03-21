@@ -34,7 +34,9 @@
   "dependencies": {
     "debug": "git://github.com/gmcdev/debug.git",
     "fs-extra": "^5.0.0",
-    "minimist": "^1.2.0"
+    "jszip": "^3.1.5",
+    "minimist": "^1.2.0",
+    "walk": "^2.3.9"
   },
   "deprecated": false,
   "description": "Creative Server Plugin - Vendor Container 2.0 ===============",
